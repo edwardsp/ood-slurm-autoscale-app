@@ -20,7 +20,7 @@ def view_autoscale_log():
     except IOError:
         pass
     
-    return render_template('index.html', items=items, **helpers)
+    return render_template('index.html', items=items[::-1], **helpers)
 
 @MyApp.route("/<log>")
 def view_azlog(log):

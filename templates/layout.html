@@ -25,7 +25,7 @@
         </button>
         <ul class="navbar-breadcrumbs">
           <li><a href="{{ dashboard_url }}">{{ dashboard_title }}</a></li>
-          <li><a href="">{{ title }}</a></li>
+          <li><a href="{{ url_for('view_autoscale_log') }}">{{ title }}</a></li>
         </ul>
       </div>
 
@@ -43,7 +43,7 @@
 {% endblock %}
 </div>
 
-<script src="/jquery-3.2.1/jquery-3.2.1.min.js"></script>
-<script src="/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="{{ url_for('static', filename='jquery-3.2.1/jquery-3.2.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='bootstrap-3.3.7-dist/js/bootstrap.min.js') }}"></script>
 </body>
 </html>
