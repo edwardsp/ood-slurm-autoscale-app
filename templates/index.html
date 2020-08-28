@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h1>{{ title }}</h1>
+  <table class="table table-bordered">
+  <tr>
+    <th>Timestamp</th>
+    <th>Operation</th>
+    <th>Nodes</th>
+    <th>Logfile</th>
+  </tr>
+  {% for item in items %}
+  <tr>
+    <td>{{ item[0] }}</td>
+    <td>{{ item[1] }}</td>
+    <td>{{ item[2] }}</td>
+    <td><a href="passenger-python-flask-demo/{{ item[3] }}">log</a></td>
+  </tr>
+  {% endfor %}
+  </table>
+{% endblock %}
