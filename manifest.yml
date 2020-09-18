@@ -1,2 +1,5 @@
 name: Slurm Autoscale
 description: View the slurm autoscale operations
+icon: fa://expand
+category: Logs
+subcategory: Autoscale
